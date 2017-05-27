@@ -2,7 +2,7 @@ IMAGE="asssaf/kodi"
 KODI_HOME_VOLUME="kodi-home"
 
 xhost +
-docker run --rm \
+docker run --rm -ti \
 	-v /tmp/.X11-unix:/tmp/.X11-unix \
 	-e "DISPLAY=unix${DISPLAY}" \
 	--device /dev/snd \
